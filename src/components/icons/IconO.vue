@@ -1,0 +1,6 @@
+<template>
+  <svg viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="35" fill="none" />
+  </svg>
+</template>
+
