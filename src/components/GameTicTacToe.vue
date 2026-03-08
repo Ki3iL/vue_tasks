@@ -108,14 +108,11 @@ function setMarker(i, j) {
   checkWinner()
 }
 
-
 //NOTE - Style logic
 function getBorder(i, j) {
-  if (i !== 1 && j !== 1) return
-
-  if (i == 1 && j == 1) return 'border-x border-y'
-  if (i == 1) return 'border-x'
-  if (j == 1) return 'border-y'
+  const top = (i !== 0) ? 'border-top' : '';
+  const left = (j !== 0) ? 'border-left' : '';
+  return `${top} ${left}`
 }
 
 function getWinnerCell(i, j) {
@@ -148,6 +145,7 @@ function resetGame() {
   game_field.value = initialGame()
   win_field.value = initialGame()
   winner.value = null
+  marker.value = 'x'
 }
 </script>
 
@@ -189,14 +187,12 @@ function resetGame() {
   --br-color: grey;
 }
 
-.border-x {
-  border-top: var(--br-px) solid var(--br-color);
-  border-bottom: var(--br-px) solid var(--br-color);
+.border-left {
+  border-left: var(--br-px) solid var(--br-color);
 }
 
-.border-y {
-  border-right: var(--br-px) solid var(--br-color);
-  border-left: var(--br-px) solid var(--br-color);
+.border-top {
+  border-top: var(--br-px) solid var(--br-color);
 }
 
 svg {
