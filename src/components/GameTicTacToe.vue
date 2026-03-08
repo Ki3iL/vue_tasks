@@ -177,18 +177,22 @@ function resetGame() {
 }
 
 .cell {
+  box-sizing: content-box;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 100px;
 
-  --br-px: 3px;
+  --br-px: 5px;
   --br-color: grey;
 }
 
 .border-left {
   border-left: var(--br-px) solid var(--br-color);
+  /* outline: var(--br-px) solid var(--br-color); */
+  /* box-shadow: -5px 0 0 0 black; */
+
 }
 
 .border-top {
