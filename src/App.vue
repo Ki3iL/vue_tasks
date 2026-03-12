@@ -1,11 +1,14 @@
 <script setup>
-import GameTicTacToe from '@/components/GameTicTacToe.vue'
+
+// Games
+import GameTicTacToe from '@/components/Games/TicTacToe/GameTicTacToe.vue'
+
 </script>
 
 <template>
-  <section>
+
     <GameTicTacToe/>
-  </section>
+
 </template>
 
 <style scoped>

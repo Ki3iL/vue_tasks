@@ -54,7 +54,7 @@ import { computed, ref} from 'vue'
 import IconX from './icons/IconX.vue'
 import IconO from './icons/IconO.vue'
 
-const GRID_SIZE = 4
+const GRID_SIZE = 3
 const CELL_SIZE = 100
 const CELL_SIZE_PX = CELL_SIZE + 'px'
 const BORDER_SIZE = 5
